@@ -14,6 +14,17 @@ def sortear(numeros, numeros_sorteados):
         sys.exit()
     else:
         numero_sorteado = random.choice(numeros)
+        if(numero_sorteado>=1 and numero_sorteado<=15):
+            print("Letra B")
+        elif(numero_sorteado>=16 and numero_sorteado<=30):
+            print("Letra I")
+        elif(numero_sorteado>=31 and numero_sorteado<=45):
+            print("Letra N")
+        elif(numero_sorteado>=46 and numero_sorteado<=60):
+            print("Letra G")
+        elif(numero_sorteado>=61 and numero_sorteado<=75):
+            print("Letra O")
+        
         print(numero_sorteado)
         numeros_sorteados.append(numero_sorteado)
         numeros.remove(numero_sorteado)
